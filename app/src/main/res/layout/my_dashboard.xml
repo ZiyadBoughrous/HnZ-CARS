@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:gravity="center">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:background="@drawable/car1"
+         android:gravity="center"
+         android:orientation="vertical">
+         <ImageButton
+             android:id="@+id/gestionClient"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:background="@drawable/client"
+             android:shadowColor="#000000"
+             android:shadowDx="10"
+             android:shadowDy="10"
+             android:shadowRadius="50"
+             android:layout_marginTop="100dp"
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Gestion des Clients"
+             android:textSize="40sp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:shadowColor="#000000"
+             android:shadowDx="3"
+             android:shadowDy="3"
+             android:shadowRadius="10"
+
+             />
+
+
+
+
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="30px"
+         android:background="@drawable/blue"></LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:background="@drawable/client1"
+         android:gravity="center"
+         android:orientation="vertical"
+         >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Gestion des Voitures"
+             android:textSize="40sp"
+             android:textColor="@color/white"
+             android:textStyle="bold"
+             android:shadowColor="#000000"
+             android:shadowDx="3"
+             android:shadowDy="3"
+             android:shadowRadius="10"
+            />
+         <ImageButton
+             android:id="@+id/gest_voit"
+             android:layout_width="120dp"
+             android:layout_height="120dp"
+             android:background="@drawable/voit"
+             android:shadowColor="#000000"
+             android:shadowDx="3"
+             android:shadowDy="3"
+             android:shadowRadius="10"
+             android:layout_marginBottom="100dp"/>
+     </LinearLayout>
+     
+     
+ </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

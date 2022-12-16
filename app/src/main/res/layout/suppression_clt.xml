@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:minHeight="?attr/actionBarSize">
+            <ImageButton
+                android:id="@+id/previous_suppression"
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:src="@drawable/previous"
+                android:background="@drawable/rounded_icons"
+                android:scaleType="centerInside"
+                android:layout_marginStart="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+            <Spinner
+                android:id="@+id/spin"
+                android:layout_width="40dp"
+                android:layout_height="50dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchById"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:hint="Chercher par ID"
+            android:iconifiedByDefault="false"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchByNom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="300dp"
+            android:hint="Chercher par Nom"
+            android:iconifiedByDefault="false"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/searchByPrenom"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="400dp"
+            android:hint="Chercher par Prénom"
+            android:iconifiedByDefault="false"/>
+
+        <ImageButton
+            android:id="@+id/supprimer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignTop="@id/searchByPrenom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/supp"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

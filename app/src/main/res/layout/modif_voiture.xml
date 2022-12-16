@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:minHeight="?attr/actionBarSize">
+            <ImageButton
+                android:id="@+id/previous_modif_v"
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:src="@drawable/previous"
+                android:background="@drawable/rounded_icons"
+                android:scaleType="centerInside"
+                android:layout_marginStart="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <Spinner
+                android:id="@+id/spin"
+                android:layout_width="40dp"
+                android:layout_height="50dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="7dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="85dp"
+                    android:gravity="center"
+                    android:text="Modifier Voiture"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <ImageButton
+                    android:id="@+id/photo_v"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="135dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/rounded_icons"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/voit"/>
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/grid"
+                    android:layout_below="@id/photo_v"
+                    android:layout_marginTop="20dp"
+                    android:numColumns="2">
+
+                    <EditText
+                        android:id="@+id/cinRenter"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:hint="CIN Loueur"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_column="0"
+                        android:layout_row="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laisser cin vide pour \n une voiture disponible"
+                        android:textSize="13dp"
+                        android:textAlignment="center"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:layout_marginTop="40dp"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:id="@+id/marque_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:hint="Marque Voiture"
+                        android:gravity="center"
+                        android:layout_marginStart="18dp"/>
+                    <EditText
+                        android:id="@+id/model_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:hint="Modèle"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"/>
+                    <EditText
+                        android:id="@+id/moteur_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:hint="Moteur"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="18dp"/>
+                    <EditText
+                        android:id="@+id/energie_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:hint="Energie"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"/>
+                    <EditText
+                        android:id="@+id/vitesse_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:hint="Vitesse Maximale"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="18dp"/>
+                    <EditText
+                        android:id="@+id/boite_a_vitesse_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_row="4"
+                        android:hint="Boîte à Vitesse"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"/>
+                    <EditText
+                        android:id="@+id/consommation_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:hint="Consommation"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="18dp"/>
+                    <EditText
+                        android:id="@+id/puissance_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_row="5"
+                        android:hint="Puissance Maximale"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:layout_marginStart="5dp"/>
+                    <EditText
+                        android:id="@+id/prix_modif"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:hint="Prix par Jour"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="18dp"/>
+
+
+                </GridLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/confirm"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/grid"
+                    android:layout_marginTop="50dp"
+                    android:text="Confirmer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="20sp"
+                    android:background="@drawable/rounded_icons"
+                    android:backgroundTint="@color/purple_500"/>
+
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

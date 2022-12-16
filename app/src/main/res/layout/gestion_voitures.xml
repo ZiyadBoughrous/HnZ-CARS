@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:minHeight="?attr/actionBarSize">
+        <ImageButton
+            android:id="@+id/previous_gestion_v"
+            android:layout_width="35dp"
+            android:layout_height="37dp"
+            android:src="@drawable/previous"
+            android:background="@drawable/rounded_icons"
+            android:scaleType="centerInside"
+            android:layout_marginStart="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="40dp"
+            android:layout_height="50dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/gest_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/gestion_voiture"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            android:textSize="35sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:src="@drawable/voit"/>
+
+        <ImageButton
+            android:id="@+id/ajout_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ajout"
+            android:layout_below="@+id/ajouter"
+            android:layout_alignRight="@+id/ajouter"
+            android:layout_alignLeft="@+id/ajouter"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:onClick="addListenerOnAddButton"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/ajouter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="270dp"
+            android:text="@string/new_car"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            android:gravity="center"
+            android:textSize="35sp"/>
+        <TextView
+            android:id="@+id/sup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="380dp"
+            android:text="@string/del_car"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            android:gravity="center"
+            android:textSize="35sp"/>
+
+        <ImageButton
+            android:id="@+id/del_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/supp"
+            android:layout_below="@+id/sup"
+            android:layout_alignRight="@+id/sup"
+            android:layout_alignLeft="@+id/sup"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/listev"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="490dp"
+            android:text="@string/car_list"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="10"
+            android:gravity="center"
+            android:textSize="35sp"/>
+
+
+        <ImageButton
+            android:id="@+id/list_v"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/list"
+            android:layout_below="@+id/listev"
+            android:layout_alignLeft="@+id/listev"
+            android:layout_alignRight="@+id/listev"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:background="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

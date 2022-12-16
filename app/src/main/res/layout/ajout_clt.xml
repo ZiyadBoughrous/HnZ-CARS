@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:minHeight="?attr/actionBarSize">
+
+            <ImageButton
+                android:id="@+id/previous_ajout"
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rounded_icons"
+                android:scaleType="centerInside"
+                android:src="@drawable/previous" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/app"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spin"
+                android:layout_width="40dp"
+                android:layout_height="50dp" />
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="85dp"
+                    android:gravity="center"
+                    android:text="@string/nouveau"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+                <ImageButton
+                    android:id="@+id/photo"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="135dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/rounded_icons"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/client" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="350dp">
+
+                    <EditText
+                        android:id="@+id/text1"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:hint="Prénom Client"
+                        android:layout_marginTop="30dp"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/text2"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/text1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:hint="Nom Client"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/text3"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/text2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:hint="Numéro de la Carte d'Identité Nationale" />
+
+                    <EditText
+                        android:id="@+id/text4"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/text3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:hint="Téléphone Portable"
+                        android:inputType="phone" />
+
+                    <EditText
+                        android:id="@+id/text5"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/text4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:hint="Adresse" />
+
+                    <TextView
+                        android:id="@+id/textt"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:layout_below="@id/text5"
+                        android:text="@string/date_deb"
+                        android:textSize="30sp"/>
+                    <DatePicker
+                        android:id="@+id/datePicker"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_below="@id/textt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/texttt"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:layout_below="@id/datePicker"
+                        android:text="@string/temps"
+                        android:textSize="30sp"/>
+                    <TimePicker
+                        android:id="@+id/timePicker"
+                        android:layout_width="350dp"
+                        android:layout_height="350dp"
+                        android:layout_below="@id/texttt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center" />
+                    <TextView
+                        android:id="@+id/fin"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:layout_below="@id/timePicker"
+                        android:text="@string/date_fin"
+                        android:textSize="30sp"/>
+
+                    <DatePicker
+                        android:id="@+id/datePicker1"
+                        android:layout_width="350dp"
+                        android:layout_height="400dp"
+                        android:layout_below="@id/fin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/temp_fin"
+                        android:layout_width="350dp"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:layout_below="@id/datePicker1"
+                        android:text="@string/temps_fin"
+                        android:textSize="30sp"/>
+
+                    <TimePicker
+                        android:id="@+id/timePicker1"
+                        android:layout_width="350dp"
+                        android:layout_height="350dp"
+                        android:layout_below="@id/temp_fin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button"
+                        android:layout_width="160dp"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/timePicker1"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/rounded_icons"
+                        android:text="@string/ajouter_clt"
+                        android:textSize="20sp"
+                        android:backgroundTint="@color/purple_500"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

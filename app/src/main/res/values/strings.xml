@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="app">HnZ Cars</string>
+    <string name="client">Gestion Client</string>
+    <string name="voiture">Gestion Voitures</string>
+    <string name="reservation">Réservations</string>
+    <string name="depense">Dépenses</string>
+    <string name="contrat">Contrats</string>
+    <string name="stats">Statistiques</string>
+    <string name="dash">My Dashboard</string>
+    <string name="new_clt">Ajouter un Client</string>
+    <string name="del_clt">Supprimer un Client</string>
+    <string name="modif_clt">Modifier Infos Client</string>
+    <string name="list">Liste des Clients</string>
+    <string name="nouveau">Nouveau Client</string>
+    <string name="actif">Actif</string>
+    <string name="passif">Passif</string>
+    <string name="date_deb">Début de Réservation </string>
+    <string name="temps">Horaire de Début</string>
+    <string name="date_fin">Fin Réservation</string>
+    <string name="temps_fin">Horaire de Fin</string>
+    <string name="ajouter_clt">Ajouter Client</string>
+    <string name="modifier_clt">Modifier Client</string>
+    <string name="hint_id">ID Client</string>
+    <string name="modif_button">Modifier Client</string>
+    <string name="gestion_voiture">Gestion Voitures</string>
+    <string name="new_car">Ajouter une voiture</string>
+    <string name="del_car">Supprimer voiture</string>
+    <string name="car_list">Liste des voitures</string>
+
+</resources>
